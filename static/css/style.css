@@ -170,6 +170,21 @@ body {
   box-shadow: 0 6px 12px 0 rgba(249, 192, 106, 0.32);
 }
 
+/* Intro style end */
+
+
+
+/* Menu style start */
+
+.menu {
+  background:
+  url('../img/svg/coffee_blast.svg') no-repeat left top 421px,
+  url('../img/svg/coffee_blast-right.svg') no-repeat right bottom 549px;
+  background-color: #FFFEFC;
+}
+
+/* Menu-desc style start */
+
 .menu-desc-text-title {
   font-weight: 700;
   font-size: 54px;
@@ -210,9 +225,9 @@ body {
   padding-top: 68px;
 }
 
-.menu {
-  background: url('../img/svg/coffee_blast.svg') no-repeat left top 421px;
-}
+/* Menu-desc style end */
+
+/* Menu-cards style start */
 
 .menu-cards-desc {
   display: flex;
@@ -297,6 +312,14 @@ body {
   margin-bottom: 82px;
 }
 
+/* Menu-cards style end */
+
+/* menu-advantages style start */
+
+.menu-advantages {
+  padding-bottom: 82px;
+}
+
 .menu-advantages-desc {
   text-align: center;
 }
@@ -320,6 +343,101 @@ body {
 .menu-advantages-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
-/* Intro style end */
+.menu-advantages-card {
+  background-color: rgba(255, 249, 241, 1);
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(249, 192, 106, 0.42);
+}
+
+.menu-advantages-card-img {
+  padding-top: 36px;
+  margin-bottom: 25px;
+}
+
+.menu-advantages-card-desc-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  color:#603809;
+  margin-bottom: 8px;
+}
+
+.menu-advantages-card-desc {
+  padding-bottom: 36px;
+}
+
+.menu-advantages-card-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #707070;
+  max-width: 192px;
+  margin: 0 auto;
+}
+
+.menu-advantages-first-card {
+  background-color: #FFEED8;
+  border: none;
+}
+
+.menu-advantages-post-text {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.menu-advantages-post-text-sub {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #707070;
+}
+
+.menu-advantages-post-text-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #603809;
+}
+
+.menu-advantages-post-conteiner-button {
+  text-align: center;
+}
+
+.menu-advantages-post-button {
+  padding: 13px 41px 14px 41px;
+  color: #1E1E1E;
+  background: #F9C06A;
+  box-shadow: 0px 6px 12px rgba(249, 192, 106, 0.22);
+  border-radius: 24px;
+}
+
+/* menu-advantages style end */
+
+/* menu style end */
+
+
+/* promo style start */
+
+.promo {
+  background:
+  linear-gradient(rgba(96, 56, 9, 0.8)),
+  url("../img//png/Rectangle\ 14.png");
+}
+
+.wrapper-promo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.promo-text-title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 72px;
+}
