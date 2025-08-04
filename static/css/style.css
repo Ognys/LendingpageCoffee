@@ -69,6 +69,13 @@ body {
 .header {
   width: 100%;
   position: fixed;
+  transition: .4s linear;
+  z-index: 999;
+}
+
+.header-active {
+  background-color: #442808;
+  padding-bottom: 20px;
 }
 
 .header-wrapper {
@@ -627,12 +634,17 @@ body {
 
 /* footer style start */
 
+.footer {
+  position: relative;
+}
+
 .wrapper-footer-top {
   background: 
   linear-gradient(rgba(96, 56, 9, 0.8)),
   url("../img/png/footer-img-top.png");
   background-size: cover;
   padding: 80px 0;
+  position: relative;
 }
 
 .footer-top-title {
@@ -681,15 +693,20 @@ body {
 
 .wrapper-footer-bot {
   background: 
-  url("../img/png/fotter_image_bot.png") no-repeat bottom 0 left,
+  url("../img/png/fotter_image_bot_80.png") no-repeat bottom 0 left,
   #442808;
   background-blend-mode: overlay;
   background-size: cover;
   padding-top: 162px;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+
+
+.footer-bot {
+  display: flex;
 }
 
 .footer-bot-left-block-title {
@@ -700,7 +717,12 @@ body {
   margin-bottom: 20px;
 }
 
+.footer-bot-left-block {
+  margin-right: 66px;
+}
+
 .footer-bot-left-block-desc {
+  max-width: 380px;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -709,5 +731,64 @@ body {
 
 .footer-bot-left-block-img {
   display: flex;
+  align-items: center;
+  
 }
 
+.footer-bot-left-block-img-link {
+  display: inline-block;
+  line-height: 0;
+  margin-right: 20px;
+}
+
+.footer-bot-right-block-nav {
+  display: flex;
+}
+
+.footer-nav-menu-item-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+  margin-bottom: 55px;
+}
+
+.footer-nav-menu-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 22px;
+  max-width: 332px;
+}
+
+.footer-bot-right-block-nav-menu {
+  margin-right: 66px;
+}
+
+.footer-bot-right-block-nav-menu:last-child {
+  margin-right: 0;
+}
+
+.footer-bot-right-block-nav-menu:last-child .footer-nav-menu-item-title {
+  margin-bottom: 31px;
+}
+
+.footer-nav-menu-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
+
+.footer-cup-bg-left {
+  position: absolute;
+  left: 0;
+  top: 36%;
+  transform: translateY(-50%);
+}
+
+.footer-cup-bg-right {
+  position: absolute;
+  right: 0;
+  top: 36%;
+  transform: translateY(-50%);
+}
